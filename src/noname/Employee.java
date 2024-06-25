@@ -1,3 +1,5 @@
+package noname;
+
 public class Employee {
 
     String name;

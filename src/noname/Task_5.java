@@ -1,3 +1,5 @@
+package noname;
+
 public class Task_5 {
     public static void main(String[] args) {
 //        int[] arr = {9, 2, 6, 4, 5, 12, 7, 8, 6};

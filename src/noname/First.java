@@ -1,18 +1,20 @@
+package noname;
+
 public class First {
 
     public static void main(String[] args) {
 
-//        Person p1 = new Person();
+//        noname.Person p1 = new noname.Person();
 //        p1.name = "Roman";
 //        p1.age = 28;
 //        p1.gender = "male";
 //
-//        Person p2 = new Person();
+//        noname.Person p2 = new noname.Person();
 //        p2.name = "Anna";
 //        p2.age = 28;
 //        p2.gender = "female";
 //
-//        Person[] persons = {p1, p2};
+//        noname.Person[] persons = {p1, p2};
 //
 //        for (int i = 0; i < persons.length; i++) {
 //            System.out.println(persons[i].getName());

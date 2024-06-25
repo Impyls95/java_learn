@@ -1,3 +1,5 @@
+package noname;
+
 public class Salary {
 
     static int getSum(Employee[] employeeArray) {

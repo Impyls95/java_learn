@@ -1,3 +1,5 @@
+package noname;
+
 public class Person {
 
     String name;
