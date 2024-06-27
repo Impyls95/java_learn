@@ -2,6 +2,8 @@ import Task_9_1_Month.Month;
 import Task_9_1_Month.MonthUtils;
 import Task_9_2.Employee;
 import Task_9_3.Manager;
+import Task_9_4.LicensePlate;
+import Task_9_4.LicensePlateMaker;
 
 public class Main {
     public static void main(String[] args) {
@@ -25,5 +27,16 @@ public class Main {
         Manager andrey = new Manager("Андрей", 35, "male", 2000.0, 5);
         Month[] reportSalaryMonthAndrey = {MonthUtils.months[2], MonthUtils.months[3]};
         System.out.println(andrey.getSalary(reportSalaryMonthAndrey));
+
+
+        System.out.println("==================================================");
+
+        LicensePlateMaker californiaMaker = new LicensePlateMaker("CA");
+        LicensePlateMaker newYorkMaker = new LicensePlateMaker("NY");
+
+        System.out.println(californiaMaker.makeNextPlate());
+        System.out.println(californiaMaker.makeNextPlate());
+        System.out.println(newYorkMaker.makeNextPlate());
+        System.out.println(californiaMaker.makeNextPlate());
     }
 }
