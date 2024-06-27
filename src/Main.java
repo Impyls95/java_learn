@@ -2,7 +2,6 @@ import Task_9_1_Month.Month;
 import Task_9_1_Month.MonthUtils;
 import Task_9_2.Employee;
 import Task_9_3.Manager;
-import Task_9_4.LicensePlate;
 import Task_9_4.LicensePlateMaker;
 
 public class Main {
