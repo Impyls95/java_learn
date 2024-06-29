@@ -1,9 +1,9 @@
 package Task_9_1_Month;
 
-public class Month {
-    String nameMonth;
-    String allDays;
-    String workDays;
+public final class Month {
+    private final String nameMonth;
+    private final String allDays;
+    private final String workDays;
 
     public Month(String nameMonth, String allDays, String workDays) {
         this.nameMonth = nameMonth;

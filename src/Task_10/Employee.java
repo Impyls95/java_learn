@@ -1,10 +1,9 @@
 package Task_10;
 
-public class Employee {
+public abstract class Employee {
 
     private double baseSalary;
     private String name;
-    private double salary;
 
     public Employee(double baseSalary, String name) {
         this.baseSalary = baseSalary;
@@ -27,7 +26,5 @@ public class Employee {
         this.name = name;
     }
 
-    public double getSalary() {
-        return getBaseSalary();
-    }
+    public abstract double getSalary();
 }

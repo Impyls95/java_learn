@@ -10,4 +10,9 @@ public class Worker extends Employee {
     public double getSalary() {
         return getBaseSalary();
     }
+
+    @Override
+    public final double getBaseSalary() {
+        return super.getBaseSalary();
+    }
 }

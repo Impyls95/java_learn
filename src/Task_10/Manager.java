@@ -1,29 +1,16 @@
 package Task_10;
 
-public class Manager extends Worker{
+public final class Manager extends AbstractManager{
 
-    private int numberOfSubordinates;
+    public final static int PERCENT_PER_SUBORDINATE = 3;
 
-    public Manager(double baseSalary, String name, int numberOfSubordinates) {
+    public Manager(double baseSalary, String name) {
         super(baseSalary, name);
-        this.numberOfSubordinates = numberOfSubordinates;
     }
-
-    public int getNumberOfSubordinates() {
-        return numberOfSubordinates;
-    }
-
-    public void setNumberOfSubordinates(int numberOfSubordinates) {
-        this.numberOfSubordinates = numberOfSubordinates;
-    }
-
 
     @Override
-    public double getSalary() {
-        if (getNumberOfSubordinates() == 0) {
-            return super.getSalary();
-        } else {
-            return getBaseSalary() * (1.0 * getNumberOfSubordinates() / 100 * 3);
-        }
+    protected final double getBonus() {
+        return getBaseSalary() * PERCENT_PER_SUBORDINATE / 100;
     }
+
 }

@@ -1,17 +1,14 @@
 package Task_10;
 
-public class Director extends Manager {
+public final class Director extends AbstractManager {
+    public final static int PERCENT_PER_SUBORDINATE = 9;
 
-    public Director(double baseSalary, String name, int numberOfSubordinates) {
-        super(baseSalary, name, numberOfSubordinates);
+    public Director(double baseSalary, String name) {
+        super(baseSalary, name);
     }
 
     @Override
-    public double getSalary() {
-        if (getNumberOfSubordinates() == 0) {
-            return super.getSalary();
-        } else {
-            return getBaseSalary() * (1.0 * getNumberOfSubordinates() / 100 * 9);
-        }
+    protected double getBonus() {
+        return getBaseSalary() * PERCENT_PER_SUBORDINATE / 100;
     }
 }
